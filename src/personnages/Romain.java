@@ -16,7 +16,7 @@ public class Romain {
 		System.out.println(prendreParole() + "«" + texte + "»");
 	}
 		private String prendreParole() {
-			return "Le Romain"+ nom + ":";
+			return "Le Romain"+" " + nom + ":";
     }
 		public void recevoirCoup(int forceCoup) {
 			force -= forceCoup;

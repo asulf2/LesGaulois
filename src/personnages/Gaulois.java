@@ -3,6 +3,7 @@ package personnages;
 public class Gaulois {
 	private String nom;
 	private int force;
+	private int effetPotion;
 	
 	public Gaulois(String nom, int force) {
 		this.nom = nom;
@@ -20,17 +21,18 @@ public class Gaulois {
 
 	public void frapper(Romain romain) {
 		System.out.println(nom + " envoie un grand coup dans la machoire de "
-				+romain.getNom());
+				+romain.getNom());	
 		romain.recevoirCoup(force / 3);
 	}
 	
 	@Override
 	public String toString() {
-		return "Gaulois [nom=" + nom ", force=" + force
+		return "Gaulois [nom=" + nom +", force =" + force
 				+ ",effetPotion=" + effetPotion + "]";
 	}
 	public static void main (String[] args) {
-		//TODO créer un main permettant de tester la classe Gaulois
+		Gaulois asterix = new Gaulois("asterix",8);
+		System.out.println(asterix);
 		
 	}
 	
